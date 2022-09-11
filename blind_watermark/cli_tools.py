@@ -1,8 +1,8 @@
 from optparse import OptionParser
 from .blind_watermark import WaterMark
 
-usage1 = 'blind_watermark --embed --pwd 1234 image.jpg "watermark text" embed.png'
-usage2 = 'blind_watermark --extract --pwd 1234 --wm_shape 111 embed.png'
+usage1 = 'blind_watermark --embed image.jpg "watermark text" embed.png'
+usage2 = 'blind_watermark --extract --pwd [given during embedding] embed.png'
 optParser = OptionParser(usage=usage1 + '\n' + usage2)
 
 optParser.add_option('--embed', dest='work_mode', action='store_const', const='embed'
@@ -10,7 +10,6 @@ optParser.add_option('--embed', dest='work_mode', action='store_const', const='e
 optParser.add_option('--extract', dest='work_mode', action='store_const', const='extract'
                      , help='Extract watermark from images')
 
-optParser.add_option('-p', '--pwd', dest='password', help='password, like 1234')
 optParser.add_option('--wm_shape', dest='wm_shape', help='Watermark shape, like 120')
 
 (opts, args) = optParser.parse_args()
@@ -28,7 +27,7 @@ def main():
             bwm1.read_wm(args[1], mode='str')
             bwm1.embed(args[2])
             print('Embed succeed! to file ', args[2])
-            print('Put down watermark size:', len(bwm1.wm_bit))
+            print('Your password is:', len(bwm1.wm_bit))
 
     if opts.work_mode == 'extract':
         if not len(args) == 1:
