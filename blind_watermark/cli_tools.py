@@ -16,9 +16,9 @@ optParser.add_option('--wm_shape', dest='wm_shape', help='Watermark shape, like 
 
 
 def main():
-    bwm1 = WaterMark(password_img=int(opts.password))
+    bwm1 = WaterMark()
     if opts.work_mode == 'embed':
-        if not len(args) == 3:
+        if not len(args) == 2:
             print('Error! Usage: ')
             print(usage1)
             return
