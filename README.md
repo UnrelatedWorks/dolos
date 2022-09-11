@@ -1,26 +1,7 @@
-<table border="0" width="10%">
-  <tr>
-    <td><img src="https://img1.github.io/tmp/1.jpg" height="80" width="82"></td>
-    <td><img src="https://img1.github.io/tmp/2.jpg" height="80" width="82"></td>
-    <td><img src="https://img1.github.io/tmp/3.jpg" height="80" width="82"></td>
-  </tr>
-  <tr>
-    <td><img src="https://img1.github.io/tmp/4.jpg" height="80" width="82"></td>
-    <td><img src="https://img.shields.io/github/stars/guofei9987/blind_watermark.svg?style=social"></td>
-    <td><img src="https://img1.github.io/tmp/6.jpg" height="82" width="82"></td>
-  </tr>
-   <tr>
-    <td><img src="https://img1.github.io/tmp/7.jpg" height="82" width="82"></td>
-    <td><img src="https://img1.github.io/tmp/8.jpg" height="82" width="82"></td>
-    <td><img src="https://img1.github.io/tmp/9.jpg" height="82" width="82"></td>
-  </tr>
-</table>
 
+# Dolor 
 
-
-# blind-watermark
-
-Blind watermark based on DWT-DCT-SVD.
+Blind watermark based on DWT-DCT-SVD and [blind_watermark](https://github.com/guofei9987/blind_watermark)
 
 
 [![PyPI](https://img.shields.io/pypi/v/blind_watermark)](https://pypi.org/project/blind_watermark/)
@@ -36,20 +17,13 @@ Blind watermark based on DWT-DCT-SVD.
 
 
 - **Documentation:** [https://BlindWatermark.github.io/blind_watermark/#/en/](https://BlindWatermark.github.io/blind_watermark/#/en/)
-- **文档：** [https://BlindWatermark.github.io/blind_watermark/#/zh/](https://BlindWatermark.github.io/blind_watermark/#/zh/)  
-- **中文 readme** [README_cn.md](README_cn.md)
 - **Source code:** [https://github.com/guofei9987/blind_watermark](https://github.com/guofei9987/blind_watermark)
 
 
 
-# install
-```bash
-pip install blind-watermark
-```
-
 For the current developer version:
 ```bach
-git clone git@github.com:guofei9987/blind_watermark.git
+git clone git@github.com:UnrelatedWorks/dolos
 cd blind_watermark
 pip install .
 ```
